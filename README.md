@@ -7,7 +7,7 @@ By changing the configuration file of xorg and your display manager on startup, 
 + xorg
 + sddm
 + **2** stand-alone xorg configuration for Intel and Nvidia, both shoud be able to work normally on your own laptop
->NOTE:
+>NOTE:  
 1.Other display managers will be supported in the future.  
 2.Uninstall bumblebee and PRIME if you have them installed, which may have conflict.
 
