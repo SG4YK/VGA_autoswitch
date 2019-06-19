@@ -20,7 +20,7 @@ $ cd VGA_autoswitch
 ~~~
 
 For the Intel configuration file, copy everything under <code>/etc/X11</code> to <code>VGA_autoswitch/vgaswitch/config/intel</code>  
-For the Nvidia configuration file, copy everything under <code>/etc/X11</code> to <code>VGA_autoswitch/vgaswitch/config/nvidia</code>
+For the Nvidia configuration file, copy everything under <code>/etc/X11</code> to <code>VGA_autoswitch/vgaswitch/config/nvidia</code>  
 You can do this by executig
 ~~~bash
 $ mkdir ./vgaswitch/config/intel
