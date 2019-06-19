@@ -1,12 +1,14 @@
 # VGA_autoswitch
 ## Description
 A service which can select video card for output automaticallydepending on power status. Generally for laptops have both Intel and dedicated Nvidia GPUs sharing the same physical screen.
-By changing the configuration file of xorg and your display manager on startup, the xorg uses Nvidia graphic card globally to provide better performance. It uses
+By enabling the service, on startup xorg uses Nvidia graphic card globally to provide better performance when connected to AC power, and uses Intel graphic for longer battery life when using battery.
+>NOTE:  
+You cannot simply change the graphic card while a xserver is running. You need to restart the system or xserver to apply the changes.
 ## Dependencies
 + systemd
 + xorg
 + sddm
-+ **2** stand-alone xorg configuration for Intel and Nvidia, both shoud be able to work normally on your own laptop
++ **2** stand-alone xorg configurations for Intel and Nvidia, both shoud be able to work normally on your own laptop
 >NOTE:  
 1.Other display managers will be supported in the future.  
 2.Uninstall bumblebee and PRIME if you have them installed, which may have conflict.
