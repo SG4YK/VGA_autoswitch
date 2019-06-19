@@ -23,9 +23,11 @@ For the Intel configuration file, copy everything under <code>/etc/X11</code> to
 For the Nvidia configuration file, copy everything under <code>/etc/X11</code> to <code>VGA_autoswitch/vgaswitch/config/nvidia</code>
 You can do this by executig
 ~~~bash
-$ cp -r /etc/X11/* ./vgaswitch/intel
+$ mkdir ./vgaswitch/config/intel
+$ cp -r /etc/X11/* ./vgaswitch/config/intel/
 or
-$ cp -r /etc/X11/* ./vgaswitch/nvidia
+$ mkdir ./vgaswitch/config/nvidia
+$ cp -r /etc/X11/* ./vgaswitch/config/nvidia/
 ~~~
 
 **Please make sure either of the configurations works fine.**  
@@ -43,4 +45,4 @@ Enable the service
 $ sudo systemctl enable vgaswitch
 ~~~
 
-Once you restart your system, it should be able to work.
+Once you restart your system, it should be able to work
