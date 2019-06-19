@@ -1,1 +1,8 @@
-/etc/systemd/system/vgaswitch.service
+[Unit]
+Description=vgaswitch
+
+[Service]
+ExecStart=/usr/share/vgaswitch/vgaswitch.sh
+
+[Install]
+WantedBy=multi-user.target
